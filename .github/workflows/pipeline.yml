@@ -31,4 +31,4 @@ jobs:
 
       - name: Push Docker Image to Amazon ECR
         run: |
-          docker tag ${{ secrets.ECR_REP }}:latest
+          docker push ${{ secrets.ECR_REP }}:latest
